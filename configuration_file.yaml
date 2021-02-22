@@ -1,0 +1,25 @@
+
+# configuration file
+
+
+# Path to the classes directories 
+root_dir:  '/home/e210/Python/ddunet/train'
+checkpoint_dir: '/home/e210/Python/ddunet'
+
+
+nr_slices: 32 # only in 3d mode
+spatial_size: 128 # 
+scan:  3 # for 2d mode; 2:axial, 1:coronal, 0:sagittal, 3:scan aquisation plane
+
+training_split: 0.8 # split for training/validation
+batch_size : 4
+num_epochs : 1
+num_workers: 4 # number of subprocesses for the data loader
+
+learning_rate: 0.0002 # initial learning rate
+weight_decay: 0.0001
+
+mode: 'max'
+factor: 0.5
+patience: 10
+
